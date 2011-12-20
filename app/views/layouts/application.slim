@@ -20,11 +20,11 @@ html
 					h3.subtitle Developer
 				nav.col
 					ul
-						li(class="home #{ @body_class == 'home' ? 'active' : '' }")
+						li(class="home #{ params[:action] == 'home' ? 'active' : '' }")
 							a.pseudo-sprite href="/" Home
-						li(class="portfolio #{ @body_class == 'portfolio' ? 'active' : '' }")
+						li(class="portfolio #{ params[:action] == 'portfolio' ? 'active' : '' }")
 							a.pseudo-sprite href="/portfolio" Portfolio
-						li(class="contact #{ @body_class == 'contact' ? 'active' : '' }")
+						li(class="contact #{ params[:action] == 'contact' ? 'active' : '' }")
 							a.pseudo-sprite href="/contact"	Contact
 				
 			#content.clearfix
