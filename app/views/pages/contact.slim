@@ -1,0 +1,23 @@
+h2
+	| Contact
+	span Me
+= form_tag("/contact") do
+	p
+		= label_tag(:name, "Name")
+		= text_field_tag(:name)
+
+	p
+		= label_tag(:email, "Email")
+		= text_field_tag(:email)
+
+	p
+		= label_tag(:company, "Company (optional)")
+		= text_field_tag(:company)
+
+	p
+		= label_tag(:message, "Message")
+		= text_area_tag(:message, "", :size => "24x6")
+
+	p
+		= submit_tag("Submit")
+	

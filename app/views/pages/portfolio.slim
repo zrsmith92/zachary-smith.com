@@ -1,0 +1,15 @@
+h2
+	| My
+	span Portfolio
+ul.items
+	- for item in @portfolio_items do
+		li
+			a href="/portfolio/#{ item.id }" = item.title
+			p = date_range(item.from, item.to)
+
+.item
+	- unless @portfolio_item.nil?
+		h3 = @portfolio_item.title
+		- unless @portfolio_item.picture.nil? 
+			img(src=@portfolio_item.picture)
+		#description == @portfolio_item.description

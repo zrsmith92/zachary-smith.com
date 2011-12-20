@@ -1,0 +1,11 @@
+h1 = "New Contact submission from #{ @contact_entry.name }"
+h3 Details:
+ul
+	li = "Name: #{ @contact_entry.name }"
+	li
+		a(href="mailto:#{ @contact_entry.email }") = "Email: #{ @contact_entry.email }"
+	- unless @contact_entry.company.nil?
+		li = "Company: #{ @contact_entry.company }"
+
+h3 Message:
+p = @contact_entry.message

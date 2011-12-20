@@ -1,0 +1,429 @@
+/* line 14, ../../app/assets/stylesheets/base.scss */
+html, body {
+  min-height: 100%;
+}
+
+/* line 15, ../../app/assets/stylesheets/base.scss */
+html {
+  background-color: #e5e5e5;
+  background-repeat: repeat-x;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f3f3), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f3f3f3, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f3f3f3, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f3f3f3, #e5e5e5);
+  background-image: linear-gradient(top, #f3f3f3, #e5e5e5);
+}
+
+/* line 20, ../../app/assets/stylesheets/base.scss */
+body {
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(45%, rgba(0, 0, 0, 0)), color-stop(45%, #e5e5e5), color-stop(55%, #e5e5e5), color-stop(55%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #e5e5e5 45%, #e5e5e5 55%, rgba(0, 0, 0, 0) 55%);
+  background: -moz-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #e5e5e5 45%, #e5e5e5 55%, rgba(0, 0, 0, 0) 55%);
+  background: -o-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #e5e5e5 45%, #e5e5e5 55%, rgba(0, 0, 0, 0) 55%);
+  background: -ms-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #e5e5e5 45%, #e5e5e5 55%, rgba(0, 0, 0, 0) 55%);
+  background: linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #e5e5e5 45%, #e5e5e5 55%, rgba(0, 0, 0, 0) 55%);
+  background-size: 5px 5px;
+  font-family: Cantarell, sans-serif;
+}
+
+/* line 36, ../../app/assets/stylesheets/base.scss */
+h1, h2, h3, h4, h5 {
+  margin: 0 0 20px;
+  color: #5e5e5e;
+}
+
+/* line 40, ../../app/assets/stylesheets/base.scss */
+h1, h2 {
+  font-family: "Lobster Two", cursive;
+}
+
+/* line 41, ../../app/assets/stylesheets/base.scss */
+h1 span {
+  color: #c5dc63;
+}
+
+/* line 42, ../../app/assets/stylesheets/base.scss */
+h2 span {
+  color: #486790;
+}
+
+/* line 43, ../../app/assets/stylesheets/base.scss */
+h2 {
+  font-size: 32px;
+}
+
+/* line 45, ../../app/assets/stylesheets/base.scss */
+p {
+  margin: 0 0 20px;
+}
+
+/* line 46, ../../app/assets/stylesheets/base.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 48, ../../app/assets/stylesheets/base.scss */
+.col {
+  width: 350px;
+  float: left;
+  margin: 0 10px;
+}
+
+/* line 54, ../../app/assets/stylesheets/base.scss */
+.col:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+/* line 55, ../../app/assets/stylesheets/base.scss */
+.col:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+
+/* line 57, ../../app/assets/stylesheets/base.scss */
+.sprite, .pseudo-sprite:before {
+  display: block;
+  background-image: url(sprites.png);
+  background-repeat: no-repeat;
+}
+
+/* line 62, ../../app/assets/stylesheets/base.scss */
+.pseudo-sprite:before {
+  content: "";
+}
+
+/* line 66, ../../app/assets/stylesheets/base.scss */
+header {
+  padding: 0 10px;
+}
+/* line 68, ../../app/assets/stylesheets/base.scss */
+header .col h1 a {
+  color: #486790;
+  font-size: 60px;
+  text-decoration: none;
+  text-shadow: 1px -1px 0 #334c70, 2px -2px 0 #334c70, 3px -3px 0 #334c70, 4px -4px 0 #334c70, 5px -5px 0 #334c70;
+  margin: 0;
+}
+/* line 79, ../../app/assets/stylesheets/base.scss */
+header .col h1 a span {
+  text-shadow: 1px -1px 0 #a1b749, 2px -2px 0 #a1b749, 3px -3px 0 #a1b749, 4px -4px 0 #a1b749, 5px -5px 0 #a1b749;
+}
+/* line 88, ../../app/assets/stylesheets/base.scss */
+header .subtitle {
+  line-height: 20px;
+  font-size: 18px;
+}
+/* line 90, ../../app/assets/stylesheets/base.scss */
+header .col {
+  width: 370px;
+}
+
+/* line 95, ../../app/assets/stylesheets/base.scss */
+nav li {
+  float: left;
+}
+
+/* line 96, ../../app/assets/stylesheets/base.scss */
+nav li a {
+  color: #515151;
+  display: block;
+  width: 123px;
+  height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 20px;
+  opacity: 0.5;
+  outline: none;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 113, ../../app/assets/stylesheets/base.scss */
+nav li a:before {
+  width: 31px;
+  height: 27px;
+  margin: 35px auto 20px;
+  background-position: 0 0;
+}
+
+/* line 119, ../../app/assets/stylesheets/base.scss */
+nav li.active a, nav li a:hover {
+  opacity: 1;
+}
+
+/* line 120, ../../app/assets/stylesheets/base.scss */
+nav:hover li.active:not(:hover) a {
+  opacity: 0.5;
+}
+
+/* line 121, ../../app/assets/stylesheets/base.scss */
+nav li a:hover, nav li a:visited {
+  color: #515151;
+}
+
+/* line 123, ../../app/assets/stylesheets/base.scss */
+nav .portfolio a:before {
+  background-position: -33px 0;
+}
+
+/* line 124, ../../app/assets/stylesheets/base.scss */
+nav .contact a:before {
+  background-position: -66px 0;
+}
+
+/* line 126, ../../app/assets/stylesheets/base.scss */
+.links li {
+  list-style: none;
+  float: right;
+  margin-right: -30px;
+  background: #486790;
+  width: 340px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  position: relative;
+  padding: 20px;
+}
+
+/* line 138, ../../app/assets/stylesheets/base.scss */
+.links li > a {
+  color: #c5dc63;
+  text-decoration: none;
+  font: 28px "Lobster Two", sans-serif;
+  font-weight: bold;
+}
+
+/* line 144, ../../app/assets/stylesheets/base.scss */
+.links li > a:before {
+  float: left;
+  background-position: 0 -27px;
+  height: 36px;
+  width: 34px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* line 152, ../../app/assets/stylesheets/base.scss */
+.links li > a.linked-in:before {
+  background-position: -34px -27px;
+}
+
+/* line 154, ../../app/assets/stylesheets/base.scss */
+.links li p {
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* line 159, ../../app/assets/stylesheets/base.scss */
+.links li p a {
+  color: #fff;
+}
+
+/* line 161, ../../app/assets/stylesheets/base.scss */
+.links li:after, .links li:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  right: -10px;
+}
+
+/* line 169, ../../app/assets/stylesheets/base.scss */
+.links li:after {
+  height: 100%;
+  border-left: 10px solid #334c70;
+  border-bottom: 10px solid transparent;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* line 176, ../../app/assets/stylesheets/base.scss */
+.links li:before {
+  border-top: 10px solid #19293f;
+  border-right: 10px solid transparent;
+  top: -10px;
+  z-index: 2;
+}
+
+/* line 183, ../../app/assets/stylesheets/base.scss */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #515151;
+}
+
+/* line 191, ../../app/assets/stylesheets/base.scss */
+#container {
+  width: 790px;
+  margin: 150px auto 0;
+}
+
+/* line 195, ../../app/assets/stylesheets/base.scss */
+#content {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-left: 10px solid #486790;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+/* line 204, ../../app/assets/stylesheets/base.scss */
+.portfolio #container {
+  width: auto;
+  margin: 20px;
+  min-width: 790px;
+}
+
+/* line 210, ../../app/assets/stylesheets/base.scss */
+.portfolio .items {
+  list-style: none;
+  width: 23%;
+  padding: 0;
+  margin-right: 2%;
+  float: left;
+}
+
+/* line 217, ../../app/assets/stylesheets/base.scss */
+.portfolio .item {
+  width: 75%;
+  margin: 0;
+  float: right;
+}
+
+/* line 18, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form label {
+  font-weight: bold;
+}
+/* line 19, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form input.text, .contact form input.title, .contact form input[type=email], .contact form input[type=text], .contact form input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 27, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form input.title {
+  font-size: 1.5em;
+}
+/* line 29, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form select {
+  margin: 0.5em 0;
+}
+/* line 55, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form fieldset {
+  border: 1px solid #cccccc;
+}
+/* line 58, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form input.text, .contact form input.title, .contact form input[type=email], .contact form input[type=text], .contact form input[type=password],
+.contact form textarea {
+  background-color: #fff;
+  border: 1px solid #bbbbbb;
+}
+/* line 61, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form input.text:focus, .contact form input.title:focus, .contact form input[type=email]:focus, .contact form input[type=text]:focus, .contact form input[type=password]:focus,
+.contact form textarea:focus {
+  border-color: #666666;
+}
+/* line 65, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form select {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 44, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form input.text, .contact form input.title, .contact form input[type=email], .contact form input[type=text], .contact form input[type=password] {
+  width: 300px;
+}
+/* line 46, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.contact form textarea {
+  width: 390px;
+  height: 250px;
+}
+/* line 222, ../../app/assets/stylesheets/base.scss */
+.contact form label {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  width: 200px;
+}
+/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.contact form label {
+  *display: inline;
+}
+/* line 227, ../../app/assets/stylesheets/base.scss */
+.contact form input, .contact form textarea {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: none;
+}
+/* line 233, ../../app/assets/stylesheets/base.scss */
+.contact form input[type=submit] {
+  margin-left: 200px;
+  padding: 10px 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5dc63), color-stop(100%, #a1b749));
+  background-image: -webkit-linear-gradient(top, #c5dc63, #a1b749);
+  background-image: -moz-linear-gradient(top, #c5dc63, #a1b749);
+  background-image: -o-linear-gradient(top, #c5dc63, #a1b749);
+  background-image: -ms-linear-gradient(top, #c5dc63, #a1b749);
+  background-image: linear-gradient(top, #c5dc63, #a1b749);
+  border: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  width: 400px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #889a3d;
+  border-left: 1px solid #e4efb6;
+  border-right: 1px solid #889a3d;
+}
+/* line 248, ../../app/assets/stylesheets/base.scss */
+.contact form input:focus, .contact form textarea:focus {
+  -moz-box-shadow: 0 0 5px #486790;
+  -webkit-box-shadow: 0 0 5px #486790;
+  -o-box-shadow: 0 0 5px #486790;
+  box-shadow: 0 0 5px #486790;
+  border-color: #969696;
+}
+/* line 252, ../../app/assets/stylesheets/base.scss */
+.contact form input[type=submit]:active {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #a9c62c), color-stop(100%, #a1b749));
+  background-image: -webkit-linear-gradient(bottom, #a9c62c, #a1b749);
+  background-image: -moz-linear-gradient(bottom, #a9c62c, #a1b749);
+  background-image: -o-linear-gradient(bottom, #a9c62c, #a1b749);
+  background-image: -ms-linear-gradient(bottom, #a9c62c, #a1b749);
+  background-image: linear-gradient(bottom, #a9c62c, #a1b749);
+}

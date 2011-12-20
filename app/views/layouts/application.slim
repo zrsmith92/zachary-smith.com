@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title Zach Smith - Developer
+		meta name="keywords" content="developer student html5 css3 obj-c java"
+
+		= stylesheet_link_tag		"http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic|Lobster+Two:400,700"
+		= stylesheet_link_tag		"application"
+		= javascript_include_tag	"application"
+		= csrf_meta_tag
+
+	body(class="clearfix #{params[:action]}")
+		#container
+			header.clearfix
+				.col
+					h1 
+						a(href="/")
+							| Zachary
+							span Smith
+					h3.subtitle Developer
+				nav.col
+					ul
+						li(class="home #{ @body_class == 'home' ? 'active' : '' }")
+							a.pseudo-sprite href="/" Home
+						li(class="portfolio #{ @body_class == 'portfolio' ? 'active' : '' }")
+							a.pseudo-sprite href="/portfolio" Portfolio
+						li(class="contact #{ @body_class == 'contact' ? 'active' : '' }")
+							a.pseudo-sprite href="/contact"	Contact
+				
+			#content.clearfix
+				- unless @success.nil?
+					p.success = @success
+				- unless @errors.nil?
+					ul.error
+						| There was a problem with your submission:
+						- @errors.each do |k, v|
+							li = "#{k.to_s.titleize} #{v}"
+				= yield
+			
+			footer
+				| Copyright &copy; 2011 Zachary Smith. All Rights Reserved.
