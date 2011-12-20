@@ -105,8 +105,11 @@ header {
 	}
 }
 
-nav li { float: left; }
-	nav li a {
+nav li {
+	
+	float: left;
+	
+	a {
 		color: #515151;
 		display: block;
 		width: 123px;
@@ -123,38 +126,39 @@ nav li { float: left; }
 		-o-transition: opacity 0.5s;
 		transition: opacity 0.5s;
 	}
-	nav li a:before {
+	a:before {
 		width: 31px;
 		height: 27px;
 		margin: 35px auto 20px;
 		background-position: 0 0;
 	}
-	nav li.active a, nav li a:hover { opacity: 1; }
-	nav:hover li.active:not(:hover) a { opacity: 0.5; }
-	nav li a:hover, nav li a:visited { color: #515151; }
 
-	nav .portfolio a:before { background-position: -33px 0; }
-	nav .contact a:before { background-position: -66px 0; }
+	&.active a, a:hover { opacity: 1; }
+	a:hover, a:visited { color: #515151; }
+}
+
+nav:hover li.active:not(:hover) a { opacity: 0.5; }
+nav .portfolio a:before { background-position: -33px 0; }
+nav .contact a:before { background-position: -66px 0; }
 
 .links li {
     list-style: none;
     float: right;
-    margin-right: -30px;
+    margin-right: -20px;
     background: $blue-primary;
     width: 340px;
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
     margin-bottom: 10px;
     position: relative;
     padding: 20px;
-}
 
-	.links li > a {
+	& > a {
 	    color: $green-primary;
 	    text-decoration: none;
 	    font: 28px "Lobster Two", sans-serif;
 	    font-weight: bold;
 	}
-	.links li > a:before {
+	& > a:before {
 		float: left;
 		background-position: 0 -27px;
 		height: 36px;
@@ -162,35 +166,36 @@ nav li { float: left; }
 		margin-top: 10px;
 		margin-right: 20px;
 	}
-	.links li > a.linked-in:before { background-position: -34px -27px; }
+	& > a.linked-in:before { background-position: -34px -27px; }
 
-		.links li p {
-			color: #fff;
-			font-size: 10px;
-			text-transform: uppercase;
-		}
-		.links li p a { color: #fff; }
+	p {
+		color: #fff;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	p a { color: #fff; }
 
-.links li:after, .links li:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    right: -10px;
-}
-.links li:after {
-    height: 100%;
-    border-left: 10px solid $blue-secondary;
-    border-bottom: 10px solid transparent;
-    bottom: 0;
-    z-index: 1;
-}
-.links li:before {
-    border-top: 10px solid $blue-tertiary;
-    border-right: 10px solid transparent;
-    top: -10px;
-    z-index: 2;
+	&:after, &:before {
+	    content: '';
+	    position: absolute;
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    right: -10px;
+	}
+	&:after {
+	    height: 100%;
+	    border-left: 10px solid $blue-secondary;
+	    border-bottom: 10px solid transparent;
+	    bottom: 0;
+	    z-index: 1;
+	}
+	&:before {
+	    border-top: 10px solid $blue-tertiary;
+	    border-right: 10px solid transparent;
+	    top: -10px;
+	    z-index: 2;
+	}
 }
 
 footer {
@@ -203,7 +208,7 @@ footer {
 
 #container {
 	width: 790px;
-	margin: 150px auto 0;
+	margin: 100px auto 0;
 }
 #content {
 	background: #fff;

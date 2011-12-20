@@ -3,6 +3,7 @@ class Notifier < ActionMailer::Base
 
   def new_contact(contact_entry)
   	@contact_entry = contact_entry
-  	mail :to => 'zrsmith92@gmail.com'
+  	mail	:to => 'zrsmith92@gmail.com',
+  			:subject => 'New Contact Entry on zachary-smith.com'
   end
 end
