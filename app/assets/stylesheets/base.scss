@@ -219,23 +219,42 @@ footer {
 }
 
 
-.portfolio #container {
-	width: auto;
-	margin: 20px;
-	min-width: 790px;;
-}
+.portfolio {
+	#container {
+		width: auto;
+		margin: 20px;
+		min-width: 790px;;
+	}
 
-.portfolio .item img { margin: 0 auto; max-width: 100%; }
-.portfolio .item #description { margin-top: 20px; }
+	.item {
+		width: 75%;
+		margin: 0;
+		float: right;
 
-.portfolio .items {
-	list-style: none;
-	width: 23%;
-	padding: 0;
-	margin-right: 2%;
-	float: left;
+		img {
+			display: block;
+			padding: 1px;
+			border: 1px solid #486790;
+			margin: 0 auto;
+			max-width: 95%;
+			max-height: 600px;
+
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			-o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		}
+		#description { margin-top: 20px; }
+	}
+
+	.items {
+		list-style: none;
+		width: 23%;
+		padding: 0;
+		margin-right: 2%;
+		float: left;
+	}
 }
-.portfolio .item { width: 75%; margin: 0; float: right; 	}
 
 .contact form {
 	@include blueprint-form;
