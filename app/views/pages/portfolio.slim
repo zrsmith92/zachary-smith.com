@@ -11,5 +11,8 @@ ul.items
 	- unless @portfolio_item.nil?
 		h3 = @portfolio_item.title
 		- unless @portfolio_item.picture.nil? 
-			img(src=@portfolio_item.picture)
-		#description == @portfolio_item.description
+			img(src="/assets/#{ @portfolio_item.picture }")
+		#description
+			p == @portfolio_item.description
+			- unless @portfolio_item.href.nil?
+				a(href=@portfolio_item.href) Visit Project

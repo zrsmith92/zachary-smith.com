@@ -225,6 +225,9 @@ footer {
 	min-width: 790px;;
 }
 
+.portfolio .item img { margin: 0 auto; max-width: 100%; }
+.portfolio .item #description { margin-top: 20px; }
+
 .portfolio .items {
 	list-style: none;
 	width: 23%;
