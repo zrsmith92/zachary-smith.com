@@ -1,5 +1,7 @@
 ZacharySmithCom::Application.routes.draw do
 
+  get "slides/sopa"
+
   root :to => 'pages#home'
 
   match 'portfolio(/:id)'  => 'pages#portfolio'
