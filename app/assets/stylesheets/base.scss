@@ -78,23 +78,26 @@ p:last-child { margin-bottom: 0; }
 
 header {
 	padding: 0 10px;
-	.col h1 a {
-		color: $blue-primary;
-		font-size: 60px;
-		text-decoration: none;
-		text-shadow: 1px -1px 0 $blue-secondary
-				   , 2px -2px 0 $blue-secondary
-				   , 3px -3px 0 $blue-secondary
-				   , 4px -4px 0 $blue-secondary
-				   , 5px -5px 0 $blue-secondary;
-		margin: 0;
-		
-		span {
-			text-shadow: 1px -1px 0 $green-secondary
-					   , 2px -2px 0 $green-secondary
-					   , 3px -3px 0 $green-secondary
-					   , 4px -4px 0 $green-secondary
-					   , 5px -5px 0 $green-secondary;
+	.col h1 {
+		margin-bottom: 0;
+		a {
+			color: $blue-primary;
+			font-size: 60px;
+			text-decoration: none;
+			text-shadow: 1px -1px 0 $blue-secondary
+					   , 2px -2px 0 $blue-secondary
+					   , 3px -3px 0 $blue-secondary
+					   , 4px -4px 0 $blue-secondary
+					   , 5px -5px 0 $blue-secondary;
+			margin: 0;
+			
+			span {
+				text-shadow: 1px -1px 0 $green-secondary
+						   , 2px -2px 0 $green-secondary
+						   , 3px -3px 0 $green-secondary
+						   , 4px -4px 0 $green-secondary
+						   , 5px -5px 0 $green-secondary;
+			}
 		}
 	}
 
@@ -253,6 +256,18 @@ footer {
 		padding: 0;
 		margin-right: 2%;
 		float: left;
+
+		li {
+			padding: 5px;
+			border-bottom: 2px dotted $gray-dark;
+			background: $gray-light;
+
+			&:nth-child(even) { background: #fff; }
+			&:last-child { border-bottom: none; }
+
+			a { color: $green-secondary; }
+			a:hover { color: $green-primary; }
+		}
 	}
 }
 

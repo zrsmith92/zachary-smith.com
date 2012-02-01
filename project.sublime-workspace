@@ -67,7 +67,7 @@
 			"file": "app/views/layouts/application.slim",
 			"settings":
 			{
-				"buffer_size": 987,
+				"buffer_size": 1233,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,23 +75,7 @@
 			"file": "app/controllers/pages_controller.rb",
 			"settings":
 			{
-				"buffer_size": 222,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/pages/home.slim",
-			"settings":
-			{
-				"buffer_size": 617,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/pages/portfolio.slim",
-			"settings":
-			{
-				"buffer_size": 167,
+				"buffer_size": 597,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,16 +83,16 @@
 			"file": "app/assets/stylesheets/base.scss",
 			"settings":
 			{
-				"buffer_size": 5168,
+				"buffer_size": 6038,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/pages/contact.slim",
+			"file": "config/deploy.rb",
 			"settings":
 			{
-				"buffer_size": 366,
-				"line_ending": "Windows"
+				"buffer_size": 1327,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -160,6 +144,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Zach/Dropbox/src/web/zachary-smith.com/app/views/pages/home.slim",
+		"/Users/Zach/Dropbox/src/web/zachary-smith.com/app/views/pages/portfolio.slim",
+		"/Users/Zach/Dropbox/src/web/zachary-smith.com/app/views/pages/contact.slim",
+		"/Users/Zach/Dropbox/src/web/zachary-smith.com/db/seeds.rb",
 		"/C/Users/Zach/src/web/zachary-smith.com/db/seeds.rb",
 		"/C/Users/Zach/src/web/zachary-smith.com/app/helpers/pages_helper.rb",
 		"/C/Users/Zach/src/web/zachary-smith.com/app/helpers/application_helper.rb",
@@ -263,6 +251,7 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -270,15 +259,15 @@
 					"file": "app/views/layouts/application.slim",
 					"settings":
 					{
-						"buffer_size": 987,
+						"buffer_size": 1233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								803,
-								803
+								0,
+								0
 							]
 						],
 						"settings":
@@ -297,15 +286,15 @@
 					"file": "app/controllers/pages_controller.rb",
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								167,
-								167
+								0,
+								0
 							]
 						],
 						"settings":
@@ -321,23 +310,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/pages/home.slim",
+					"file": "app/assets/stylesheets/base.scss",
 					"settings":
 					{
-						"buffer_size": 617,
+						"buffer_size": 6038,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								354,
-								354
+								4923,
+								4923
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby-Slim.tmbundle/Syntaxes/Ruby Slim.tmLanguage",
+							"syntax": "Packages/SCSS.tmbundle/Syntaxes/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -348,77 +337,25 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/pages/portfolio.slim",
+					"file": "config/deploy.rb",
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 1327,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								1263,
+								1263
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby-Slim.tmbundle/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/stylesheets/base.scss",
-					"settings":
-					{
-						"buffer_size": 5168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4314,
-								4314
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS.tmbundle/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3310.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/pages/contact.slim",
-					"settings":
-					{
-						"buffer_size": 366,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								364,
-								364
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby-Slim.tmbundle/Syntaxes/Ruby Slim.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
