@@ -48,6 +48,8 @@ module ZacharySmithCom
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+	config.assets.precompile += ['slides.css', 'slides/sopa.css', 'impress.js']
+	config.assets.initialize_on_precompile = false
 
     config.sass.load_paths << Compass::Frameworks['compass'].stylesheets_directory;
     config.sass.load_paths << Compass::Frameworks['blueprint'].stylesheets_directory;
